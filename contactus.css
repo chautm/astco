@@ -1,0 +1,115 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 2
+
+   The Spice Bowl Payment Form Style Sheet
+   Author: Rita Sato
+   Date:   3/1/2014
+
+   Filename:         payment.css
+   Supporting Files: go.png, stop.png
+
+*/
+#main{
+	background-color: white;
+}
+
+section table{
+	font-size: 14px;
+}
+section h1{
+	color: rgb(192,0,0);
+	font-size: 24px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-align: center;
+}
+
+fieldset{
+	border: none;
+	margin: 5px;	
+}
+
+fieldset legend{
+	background-color: rgb(255,135,135);
+	color: white;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-indent: 20px;
+	width: 100%;
+	border-radius: 10px;
+}
+
+fieldset p{
+	text-align: center;
+	font-size: 14px;
+}
+
+label{
+	display: block;
+	float: left;
+	clear: left;
+	font-size: 0.8em;
+	text-align: right;
+	margin: 2px 5px 2px 5px;
+	width: 25%;	
+}
+
+#main input{
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	width: 60%;
+	margin:2px 0px 2px 0px;
+}
+
+select{
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 2px;
+}
+
+textarea{
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	height: 150px;
+	width: 60%;
+}
+
+
+#main input[type="submit"]{
+	
+	float: none;
+	width: 150px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;	
+}
+/*
+select:focus,input:focus,textarea:focus{
+	background-color: rgb(255,218,165);
+}
+
+input:focus:invalid{
+	background: rgb(255,245,215) url('stop.png') bottom right no-repeat;	
+	-o-background-size:contain;	
+	-moz-background-size:contain;
+	-webkit-background-size:contain;
+	background-size: contain;
+}
+
+
+input:focus:valid{
+	background: rgb(215,255,215) url('go.png') bottom right no-repeat;
+	-o-background-size:contain;	
+	-moz-background-size:contain;
+	-webkit-background-size:contain;
+	background-size: contain;
+}
+*/

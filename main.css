@@ -1,0 +1,63 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Case Problem 2
+
+   Pizza Style Sheet
+   Author: MY CHAU TU
+   Date:   2014/04/23
+
+   Filename:         pizza.css
+   Supporting Files: 
+
+*/
+
+
+
+
+section p{
+	font-size: 16px;
+	margin: 15px;
+}
+
+section img{
+	float: right;
+	margin: 15px;
+	width: 400px;
+	-moz-border-radius:300px;
+	-webkit-border-radius:300px;
+	border-bottom-left-radius: 300px;
+}
+
+.coupon{
+	border-style: dashed;
+	border-color: grey;
+	border-width: 3px;
+	float: left;
+	width: 170px;
+	height: 150px;
+	margin: 20px 10px 20px 10px;
+	background-image: url('./img/notice.png');
+	background-repeat: no-repeat;
+	background-position:  bottom right;
+	background-color: white;
+	/*background: white url('notice.png') bottom right no-repeat;*/
+}
+
+.coupon h1{
+	color: white;
+	background-color: rgb(255,135,135);
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-align: center;
+	height: 25px;
+	text-transform: lowercase;
+}
+
+.coupon p{
+	font-size: 14px;
+	text-align: center;
+	margin: 5px;
+}
+
+

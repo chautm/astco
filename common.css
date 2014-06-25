@@ -1,0 +1,192 @@
+
+
+
+body, div, header, section, aside, footer, nav{
+	display: block;	
+}
+
+*{
+	padding: 0px;
+	margin: 0px; 	
+}
+
+
+body{
+	background-color: pink;
+	/* font-family: Verdana,Georgia,sans-serif; */
+	font-family: 'Trebuchet MS', Verdana, sans-serif
+}
+
+ .topcorner{
+   position:absolute;
+   top:10px;
+   right:150px;
+   font-size: 12px;
+  }
+
+
+#container{
+	width: 1000px;
+	margin: 0 auto 0 auto;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-color: black;
+	background-color: white;
+	background-image: url('./img/redbar.png');
+	background-position: left top;
+	background-repeat: repeat-y; 
+	/*background: white url('redbar.png') top left repeat-y;*/
+}
+
+
+header{
+	background-color: white;
+	height: 100px;
+}
+
+
+.horizontal{
+	height: 70px;
+	width: 100%;
+	background-color: white;
+}
+
+.horizontal ul li{
+	background-color: white;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	width: 180px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	text-align:center;
+}
+
+.horizontal ul li a{
+	display: block;
+	background-color: rgb(255,135,135);
+	color: white;	
+	text-decoration: none;
+	-moz-border-radius:30px/25px;
+	-webkit-border-radius:30px 25px;
+	border-radius: 30px/25px;
+
+}
+
+.horizontal ul li a:hover{
+	
+	background-color: rgb(255,101,101);
+	color: black;
+}
+
+.vertical{
+	float: left;
+	clear: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 200px;	
+}
+
+.vertical ul li{	
+	list-style-type: none;
+	text-indent: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.vertical ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	
+}
+
+.vertical ul li a:hover{
+	color: black;
+}
+
+#main{
+	background-color: rgb(255,211,211);
+	float: left;
+	width: 600px;
+}
+
+#itemlist{
+	/*border:1px solid black;		
+	border-collapse:collapse;	*/
+	text-align: left;	
+	background-color: white;
+	border-spacing:0px;
+}
+
+#itemlist caption{
+	color: rgb(192,0,0);
+	font-size: 24px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#itemlist img{
+	display: block;
+    margin: 20px auto 10px;
+    max-width: 200px;
+    max-height: 200px;
+    outline: none;
+}
+
+#cartform h2{
+	color: rgb(192,0,0);
+	font-size: 24px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-align: center;
+}
+aside{
+	float: left;
+	width: 200px;
+}
+
+aside h1{
+	color: rgb(192,0,0);
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	text-align: center;
+}
+
+aside ul li{
+	background-color: rgb(255,135,135);
+	border-radius: 5px;
+	font-size: 12px;
+	color: black;
+	list-style-type: none;
+	margin: 10px;
+	padding: 5px;
+}
+
+aside ul li img{
+	width: 100%;
+}
+
+
+
+footer{
+	clear: left;
+	margin-left: 200px;
+}
+
+
+footer address{
+	border-top: 2px;
+	border-top-style: solid;
+	border-top-color: pink;
+	color: red;
+	font-size: 12px;
+	font-style: normal;
+	text-align: center;
+	margin-top: 25px;
+	padding-bottom: 20px;
+}
