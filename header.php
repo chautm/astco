@@ -49,7 +49,7 @@
 		<div class="topcorner">
 			<input type='hidden' name='submitted' id='submitted' value='1'/>
 
-	 		<input type="text" name="username" class ='roundText' placeholder='User Name' required="required maxlenghth='50'"/>
+	 		<input type="text" name="username" class ='roundText' placeholder='User Name' required="required maxlenghth='30'"/>
 
  			<input type="password" name="password" class ='roundText' placeholder='Password' autocomplete='off' required="required"/>
  			
