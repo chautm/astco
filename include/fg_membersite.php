@@ -39,7 +39,7 @@ class FGMembersite
     //-----Initialization -------
     function FGMembersite()
     {
-        $this->sitename = 'YourWebsiteName.com';
+        $this->sitename = 'www.tumychau.com';
         $this->rand_key = '0iQx5oBk66oVZep';
     }
     
