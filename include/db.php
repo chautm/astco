@@ -4,10 +4,6 @@
     	 session_start();
 	}
 
-	//@mysql_connect("localhost","root","") or die("Not available, please try again later");
-	//@mysql_select_db("onlinerestaurant") or die("Not available, please try again later");
-
-
 	require_once('twilio-php/Services/Twilio.php');
 
 	function send_sms($to, $msg)
@@ -33,6 +29,7 @@
 		$db_name     = "heroku_aea1cdaa9a72f3b";
 		$db_username = "b89960d4cda89c";
 		$db_password = "6aff7ef0";
+	
 		$db = mysqli_connect($db_hostname, $db_username, $db_password, $db_name);
 
 		if($db->connect_errno > 0)

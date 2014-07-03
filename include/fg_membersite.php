@@ -296,7 +296,7 @@ class FGMembersite
     
     function HandleDBError($err)
     {
-        $this->HandleError($err."\r\n mysqlerror:".mysql_error());
+        $this->HandleError($err."\r\n mysqlerror:".mysqli_error($this->connection));
     }
     
     function GetFromAddress()
@@ -333,7 +333,7 @@ class FGMembersite
 
         $qry = "Select firstname, lastname, email from $this->tablename where username='$username' and password='$pwdmd5'";
         
-        $result = mysqli_query($qry,$this->connection);
+        $result = mysqli_query($this->connection,$qry);
         
         if(!$result || mysqli_num_rows($result) <= 0)
         {
@@ -341,7 +341,7 @@ class FGMembersite
             return false;
         }
         
-        $row = mysql_fetch_assoc($result);
+        $row = mysqli_fetch_assoc($result);
 
         
         $_SESSION['name_of_user']  = $row['firstname']." ".$row['lastname'];
@@ -369,7 +369,7 @@ class FGMembersite
         //$qry = "Update $this->tablename Set password='".md5($newpwd)."' Where  id_user=".$user_rec['id_user']."";
         $qry = "Update $this->tablename Set password='".md5($newpwd)."' Where  UserName='".$user_rec['UserName']."'";
         
-        if(!mysqli_query( $qry ,$this->connection))
+        if(!mysqli_query( $this->connection, $qry ))
         {
             $this->HandleDBError("Error updating the password \nquery:$qry");
             return false;
@@ -388,13 +388,13 @@ class FGMembersite
         if ($email!='') 
         {
             //$email = $this->SanitizeForSQL($email);
-            $result = mysqli_query("Select * from $this->tablename where email='$email'",$this->connection);      
+            $result = mysqli_query($this->connection,"Select * from $this->tablename where email='$email'");      
         }
         else
         {
             $str=$_SESSION['username'];      
         
-            $result = mysqli_query("Select * from $this->tablename where UserName='$str'",$this->connection);      
+            $result = mysqli_query($this->connection,"Select * from $this->tablename where UserName='$str'");      
         }
         
 
@@ -403,7 +403,7 @@ class FGMembersite
             $this->HandleError("There is no user with email: $email");
             return false;
         }
-        $user_rec = mysql_fetch_assoc($result);
+        $user_rec = mysqli_fetch_assoc($result);
 
         
         return true;
@@ -647,7 +647,7 @@ class FGMembersite
     {
         $field_val = $this->SanitizeForSQL($formvars[$fieldname]);
         $qry = "select username from $this->tablename where $fieldname='".$field_val."'";
-        $result = mysqli_query($qry,$this->connection);   
+        $result = mysqli_query($this->connection,$qry);   
         if($result && mysqli_num_rows($result) > 0)
         {
             return false;
@@ -666,12 +666,12 @@ class FGMembersite
             $this->HandleDBError("Database Login failed! Please make sure that the DB login credentials provided are correct");
             return false;
         }
-        if(!mysqli_select_db($this->database, $this->connection))
+        if(!mysqli_select_db( $this->connection, $this->database))
         {
             $this->HandleDBError('Failed to select database: '.$this->database.' Please make sure that the database name provided is correct');
             return false;
         }
-        if(!mysqli_query("SET NAMES 'UTF8'",$this->connection))
+        if(!mysqli_query($this->connection,"SET NAMES 'UTF8'"))
         {
             $this->HandleDBError('Error setting utf8 encoding');
             return false;
@@ -681,7 +681,7 @@ class FGMembersite
     
     function Ensuretable()
     {
-        $result = mysqli_query("SHOW COLUMNS FROM $this->tablename");   
+        $result = mysqli_query($this->connection,"SHOW COLUMNS FROM $this->tablename");   
         if(!$result || mysqli_num_rows($result) <= 0)
         {            
             return false;
@@ -733,7 +733,7 @@ class FGMembersite
                 "' . md5($formvars['password']) . '",
                 "' . $this->SanitizeForSQL($formvars['phone']) . '"
                 )';      
-        if(!mysqli_query( $insert_query ,$this->connection))
+        if(!mysqli_query( $this->connection,$insert_query))
         {
             $this->HandleDBError("Error inserting data to the table\nquery:$insert_query");
             return false;
@@ -751,7 +751,7 @@ class FGMembersite
     {
         if( function_exists( "mysql_real_escape_string" ) )
         {
-              $ret_str = mysql_real_escape_string( $str );
+              $ret_str = mysqli_real_escape_string( $this->connection,$str );
         }
         else
         {
