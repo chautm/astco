@@ -70,8 +70,7 @@ if(isset($_POST['submitted']))
 
 	<br/><br/><br/>
 	<div class='container'>
-		<input type='submit' name='Submit' value='Submit' />
-		<p><a href='index.php'>Go Back Home</a></p>
+		<input type='submit' name='Submit' value='Submit' />		
 	</div>
 
 	</fieldset>

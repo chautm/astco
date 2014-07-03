@@ -90,7 +90,7 @@
                            // In case any of our lines are larger than 70 characters, we should use wordwrap()
                             $message = wordwrap($message, 70, "\r\n");                                                                         
                             
-                           // $ok=mail($to, $subject, $message); the mail service is not working in school.
+                            $ok=mail($to, $subject, $message); //the mail service is not working in school.
                             send_sms($to,$from." ".$message);
                             echo "<h1> Mail Sent</h1>";                                
                         }                    
