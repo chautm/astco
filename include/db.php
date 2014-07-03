@@ -19,17 +19,17 @@
 
 	function connect_db()
 	{
-	
+	/*
 		$db_hostname = "localhost";
 		$db_name     = "onlinerestaurant";
 		$db_username = "root";
 		$db_password = "";
-	/*
+	*/
 		$db_hostname = "us-cdbr-east-06.cleardb.net";
 		$db_name     = "heroku_aea1cdaa9a72f3b";
 		$db_username = "b89960d4cda89c";
 		$db_password = "6aff7ef0";
-	*/
+	
 		$db = mysqli_connect($db_hostname, $db_username, $db_password, $db_name);
 
 		if($db->connect_errno > 0)
