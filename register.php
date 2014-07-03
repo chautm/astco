@@ -136,6 +136,7 @@ if(isset($_POST['submitted']))
 
 // ]]>
         </script>
+		</div>
      </section>
 
     <?php 
