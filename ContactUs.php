@@ -31,6 +31,7 @@
           include "header.php"; 
           include "horizontal_menu.php"; 
           include "vertical_menu.php"; 
+		  require "vendor/autoload.php";
           require_once("./include/db.php");
         ?>
 
@@ -90,7 +91,21 @@
                            // In case any of our lines are larger than 70 characters, we should use wordwrap()
                             $message = wordwrap($message, 70, "\r\n");                                                                         
                             
-                            $ok=mail($to, $subject, $message); //the mail service is not working in school.
+							$SENDGRID_USERNAME="app26775163@heroku.com";
+							$SENDGRID_PASSWORD = "14e2o9ga";
+							
+							$sendgrid = new SendGrid($SENDGRID_USERNAME,$SENDGRID_PASSWORD);
+							$email    = new SendGrid\Email();
+							$email->addTo($to)->
+							setFrom($email)->
+							setSubject($subject)->
+							setText($message)->
+							setHtml('<strong>Hello World!</strong>');
+
+							$sendgrid->send($email);
+							
+                           // $ok=mail($to, $subject, $message); //the mail service is not working in school.
+						   
                             send_sms($to,$from." ".$message);
                             echo "<h1> Mail Sent</h1>";                                
                         }                    

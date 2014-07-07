@@ -20,11 +20,17 @@
 	function connect_db()
 	{
 	/*
+	$SENDGRID_USERNAME="app26775163@heroku.com";
+	$SENDGRID_PASSWORD = "14e2o9ga";
+	*/
+	
+	/*
 		$db_hostname = "localhost";
 		$db_name     = "onlinerestaurant";
 		$db_username = "root";
 		$db_password = "";
-	*/
+	*/	
+	
 		$db_hostname = "us-cdbr-east-06.cleardb.net";
 		$db_name     = "heroku_aea1cdaa9a72f3b";
 		$db_username = "b89960d4cda89c";
