@@ -27,39 +27,27 @@
 
    <body>
       <div id="container">   
-        <?php 
-          include "header.php"; 
-          include "horizontal_menu.php"; 
-          include "vertical_menu.php"; 
-		  require "vendor/autoload.php";
-          require_once("./include/db.php");
-        ?>
+        <?php include "header.php"; ?>
+		  <hr>
+          <?php include "horizontal_menu.php"; ?>
+		  <hr>
+		  <?php  require "vendor/autoload.php";
+          require_once("./include/db.php");?>
 
          <section id="main">
-            <h1>Contact Us</h1>        
+               
                   <fieldset id="address">
-                     <legend>Location</legend>
-                     <p>                      
-                        Address: 4800 Boulevard Decarie, Montreal, QC  H3X 2H5 <br/>
-                        Phone: (514) 488 - 2161 <br/><br/>
-
-                      </p>
-                        <table width="600" border="0" cellspacing="0" cellpadding="1">
-                          <th>Opening Hours</th>
-                          <tr align="center"><td>Sundays   : 10:00 ~ 21:00</td></tr>                            
-                          <tr align="center"><td>Saturdays : 10:00 ~ 21:00</td></tr>  
-                          <tr align="center"><td>Fridays   : 10:00 ~ 21:00</td></tr>  
-                          <tr align="center"><td>Thursdays : 10:00 ~ 21:00</td></tr>  
-                          <tr align="center"><td>Wednesdays: 10:00 ~ 21:00</td></tr>  
-                          <tr align="center"><td>Tuesdays  : 10:00 ~ 21:00</td></tr>  
-                          <tr align="center"><td>Mondays   : Close</td></tr>  
-                        </table>                                     
-                     
+                      	<p>303-5025 Avenue Macdonald</br>
+						Montreal, QC  H3X 2V2 </br>
+						Email: hoang.tran@astco.ca</br>
+						Tel:(514) 975 - 1977 <br/>					                           
+						</p>
+						</br>
                   </fieldset>
  
                   <form ation="<?php echo $_SERVER["PHP_SELF"];?>" method="POST">                 
                      <fieldset id="info">
-                        <legend>Question/Suggestion/Complaint?</legend>
+                        
                            <label for="name">Your Name:</label><input type="text" name="name" required="required"><br/>
                            <label for="email">Your Email:</label><input type="text" name="email" required="required"><br/>
                            <label for="message">Your Message:</label>

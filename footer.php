@@ -1,10 +1,12 @@
 <footer>
     <address>               
-               4800 Boulevard Decarie&bull;
-               Montreal, QC  H3X 2H5 &bull;
-               (514) 488 - 2161 <br/>
+				<br/>
+               <p>303-5025 Avenue Macdonald&bull;
+               Montreal, QC  H3X 2V2 &bull;
+               (514) 975 - 1977 <br/>
+			   </p>
                <?php 
-				echo "Copyright &copy; 2013 - " . date("Y") ;
+				echo "Copyright &copy; 2014 - " . date("Y") ;
 				?>
     </address>
     

@@ -4,9 +4,9 @@
 
    <head>
    <!--
-      My Chau Vietnamese Restaurant
+      ASTCO
       Author: MY CHAU TU
-      Date:   2014/05/20
+      Date:   2015/02/19
 
       Filename:        index.php
       Supporting files: modernizr-1.5.js, notice.png, rblogo.png,
@@ -15,7 +15,7 @@
    -->
 
       <meta charset="UTF-8" />
-      <title>My Chau Vietnamese Restaurant</title>
+      <title>ASTCO</title>
       <script src="./js/modernizr-1.5.js"></script>
       <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css" />
       <link rel="stylesheet" type="text/css" href="common.css">
@@ -26,71 +26,44 @@
    <body>
       <div id="container">         
          <?php include "header.php"; ?>
+		 <hr>
          <?php include "horizontal_menu.php"; ?>
-         <?php include "vertical_menu.php"; ?>
+		 <hr>
 
-         <section id="main">         
-            <img src="./img/main.jpg" alt="" />
-            <p>Vietnamese cuisine doesn't win any points for complexity. 
-               Many of the most popular dishes can be made just as well on the side of the road as in a top-end restaurant.
-            </p>
-            <p>             
-               But it’s precisely this simplicity, the subtle variations by region and the fresh 
-               ingredients that keep us pulling up a plastic stool for more.
-            </p>
-
-            <div class="coupon">
-               <h1>Classic Combo</h1>
-               <p>1 - Rice Noodle Soup
-                  &amp; a 2-Liter of Your Choice
-                  For Only $14.99
-               </p>
-               <p>Expires 3/14</p>
-            </div>
-            <div class="coupon">
-               <h1>Beef &amp; Noodle</h1>
-               <p>16" Specialty Pizza
-                  Reg. Cheese Stix &amp; a 2-Liter
-                  For Only $21.99
-               </p>
-               <p>Expires 3/14</p>
-            </div>
-            <div class="coupon">
-               <h1>1/2 Price</h1>
-               <p>Buy any Special House
-                  at Reg. Price &amp; Get a 2nd
-                  dish For Half Price
-               </p>
-               <p>Expires 3/14</p>
-            </div>
-            <div class="coupon">
-               <h1>Chicken &amp; Wings</h1>
-               <p>14" 2-Topping Pizza 
-                  &amp; 12 Wings
-                  For Only $15.99
-               </p>
-               <p>Expires 3/31</p>
-            </div>
-            <div class="coupon">
-               <h1>$3.00 Off</h1>
-               <p>Get $3.00 Off
-                  any combo at
-                  Menu Price
-               </p>
-               <p>Expires 3/31</p>
-            </div>
-            <div class="coupon">
-               <h1>Sub Dinner</h1>
-               <p>1 Vietnamese &amp; Sandwiches
-                  &amp; 1 20oz Soda
-                  For Only $6.99
-               </p>
-               <p>Expires 3/31</p>
-            </div>
+         <section id="main">     
+			<div>
+				<img src="./img/main.jpeg" alt="" />
+			</div>
+			<div>
+				
+				<p>Our dedication, technical ability, knowledge, efficiency and experience help us provide our clients with efficient structural designs 
+				that are practical and cost-effective.  From large projects to small projects, servicing the needs of our clients is our first priority 
+				and we pride ourselves on providing excellent engineering combined with unmatched service.  
+				Because of our philosophy, we have enjoyed a tremendous amount of repeat business from our clients and 
+				have developed long-term client relationships in all type of markets.
+				</p>
+				
+			</div>
+			
+				<div class="coupon"  style="background-image: url('./img/commercial.jpg')">
+					<h1>Commercial</h1>
+				</div>
+				
+				<div class="coupon"  style="background-image: url('./img/residential.jpg')">
+					
+					<h1>Residential</h1>
+				</div>
+				<div class="coupon" style="color:white; background-color: black; font-size: 45px;text-align: left;letter-spacing: 2px; ">
+							<!--  background-image: url('./img/commercial.jpg'); -->
+					<p>"Dedicated to quality and client satisfaction by providing innovative, practical, and cost-effective structural designs and solutions."
+					</p>
+					<p>--Astco engineers--</p>
+                 </div>
+			
          </section>
 
          <?php 
-          include 'aside.php';
+       
           include 'footer.php';
          ?>
 
