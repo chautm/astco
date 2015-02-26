@@ -4,19 +4,14 @@
    <head>
    <!--
       
-      My Chau Vietnamese Restaurant
+      ASTCO
       Author: My chau Tu
-      Date:   2014/05/20
+      Date:   2015/02/20
 
-      Filename:         ContactUs.php
-      Supporting files: diners.png, discover.png, formsubmit.js,
-                        go.png, master.png, modernizr-1.5.js, payment.css, 
-                         sb.css, sbback.png, sblogo.png,
-                         stop.png, visa.png
    -->
 
       <meta charset="UTF-8" />
-      <title>My Chau Vietnamese Restaurant</title>
+      <title>ASTCO</title>
       <script src="modernizr-1.5.js"></script>
       <script src="formsubmit.js"></script>
       <link href="common.css" rel="stylesheet" type="text/css" />
