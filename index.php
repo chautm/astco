@@ -36,7 +36,7 @@
 			</div>
 			<div>
 				
-				<p>Our dedication, technical ability, knowledge, efficiency and experience help us provide our clients with efficient structural designs 
+				<p align="justify">Our dedication, technical ability, knowledge, efficiency and experience help us provide our clients with efficient structural designs 
 				that are practical and cost-effective.  From large projects to small projects, servicing the needs of our clients is our first priority 
 				and we pride ourselves on providing excellent engineering combined with unmatched service.  
 				Because of our philosophy, we have enjoyed a tremendous amount of repeat business from our clients and 

@@ -30,7 +30,8 @@ body{
 	/*border-left: 1px solid;
 	border-right: 1px solid;
 	border-color: black;	
-	/*background-image: url('./img/redbar.png');*/
+	*/
+	background-image: url('./img/header.jpg');
 	background-position: left top;
 	background-repeat: repeat-y; 
 	background-color: white;

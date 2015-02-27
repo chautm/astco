@@ -32,7 +32,8 @@
          <section id="main">
                
                   <fieldset id="address">
-                      	<p>303-5025 Avenue Macdonald</br>
+						</br></br>
+                      	<p>Addresse: 303-5025 Avenue Macdonald</br>
 						Montreal, QC  H3X 2V2 </br>
 						Email: hoang.tran@astco.ca</br>
 						Tel:(514) 975 - 1977 <br/>					                           
@@ -70,7 +71,7 @@
                             
                            $to="chautm@gmail.com";
                            $from ="From: $name<$email>";
-                           $subject="Message from the web My Chau Vietnamese Restaurant";   
+                           $subject="Message from the web ASTCO";   
                            // In case any of our lines are larger than 70 characters, we should use wordwrap()
                             $message = wordwrap($message, 70, "\r\n");                                                                         
                             
@@ -96,8 +97,9 @@
                       
                   ?>  
           </section>
-
-        <?php include "footer.php"; ?>
+		<footer style="height:100px;" >
+		</footer>
+     <!--   <?php //include "footer.php"; ?>-->
       </div>
    </body>
 </html>
